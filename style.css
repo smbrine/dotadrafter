@@ -1,0 +1,29 @@
+.wrapper {
+    height: 100vh;
+}
+
+.dropdowns {
+    display: flex;
+}
+
+.dropdowns .rDropdownsContainer select, .dropdowns .dDropdownsContainer select {
+    margin: 2vh 10vw;
+    margin-left: 18vw;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    text-align: center;
+}
+
+.hero-builds {
+    font-size: 10px;
+}
+
+.hero-builds .rHeroes, .dHeroes {
+    margin: 2vh 10vw;
+    margin-left: 18vw;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    text-align: center;
+}
