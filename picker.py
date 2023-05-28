@@ -37,7 +37,7 @@ else:
     refreshDatasets()
     fresh_files = load_files_in_resources(folder_path)
     for i, file in enumerate(fresh_files):
-        if i == 1:
+        if i == 0:
             with open(f'{folder_path}/{file}.json', "r", encoding="utf-8") as f:
                 counter_dataset = json.load(f)
         else: 
