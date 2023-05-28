@@ -221,7 +221,7 @@ def refreshDatasets():
         
         spaces = 20 - len(hero_nam)
         hero_nam = (' ' * int(spaces / 2)) + hero_nam + (' ' * int(spaces / 2))
-        print(f"{h+1:3}/{len(hero_names)} | {hero_nam:20}| Took {(end_time-start_time)/1_000_000:.0f}ms | Approx. time remaining: {outc_ms:6}ms | {100 / len(hero_names) * (h+1):.2f}% done", end="\r")
+        print(f"{h+1:3}/{len(hero_names)} | {hero_nam:20}| Took {(end_time-start_time)/1_000_000:6.0f}ms | Approx. time remaining: {outc_ms/1_000:6}s | {100 / len(hero_names) * (h+1):.2f}% done", end="\r")
     print((" "*100))
     print(f"\r\rSuccessfuly refreshed database. Took {sum(time_spent)/1_000_000_000:.2f}s. Average hero time was {(sum(time_spent) / len(time_spent))/1_000_000_000:.2f}s.") 
 
