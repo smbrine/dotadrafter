@@ -1,9 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
+    padding: 0;
     height: 100vh;
 }
 
 .dropdowns {
+    padding: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 35vh;
     display: flex;
+    background-color: black;
 }
 
 .dropdowns .rDropdownsContainer select, .dropdowns .dDropdownsContainer select {
@@ -16,14 +27,30 @@
 }
 
 .hero-builds {
+    height: 65vh;
+    width: 100vw;
     font-size: 10px;
+    display: flex;
+    background-color: red;
 }
 
-.hero-builds .rHeroes, .dHeroes {
-    margin: 2vh 10vw;
-    margin-left: 18vw;
+.hero-builds .rHeroes {
+    margin: 0vh 10vw;
+    width: 40vw;
+    padding-left: 5vw;
     display: flex;
     justify-content: left;
     flex: 1;
     text-align: center;
 }
+
+.hero-builds .dHeroes {
+    margin: 0vh 10vw;
+    width: 40vw;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    flex: 1;
+    text-align: center;
+}
+
