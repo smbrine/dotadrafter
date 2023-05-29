@@ -29,7 +29,7 @@ if fresh_files:
         if i == 0:
             with open(f'{folder_path}/{file}.json', "r", encoding="utf-8") as f:
                 counter_dataset = json.load(f)
-        else: 
+        elif i == 1: 
             with open(f'{folder_path}/{file}.json', "r", encoding="utf-8") as f2:
                 build_dataset = json.load(f2)
 else:
@@ -40,7 +40,7 @@ else:
         if i == 0:
             with open(f'{folder_path}/{file}.json', "r", encoding="utf-8") as f:
                 counter_dataset = json.load(f)
-        else: 
+        elif i == 1: 
             with open(f'{folder_path}/{file}.json', "r", encoding="utf-8") as f2:
                 build_dataset = json.load(f2)
     
